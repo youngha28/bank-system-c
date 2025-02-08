@@ -24,9 +24,30 @@ void test_createAccount()
     printf("test_createAccount() passed!\n");
 }
 
+void test_displayAccounts()
+{
+    Account accounts[MAX_ACCOUNTS];
+    int count = 2;
+
+    // Manually adding accounts for testing
+    accounts[0].accountNumber = 1000;
+    strcpy(accounts[0].name, "Alice");
+    accounts[0].balance = 500.0;
+
+    accounts[1].accountNumber = 1001;
+    strcpy(accounts[1].name, "Bob");
+    accounts[1].balance = 300.0;
+
+    // Display accounts (manually check output)
+    printf("Running test: test_displayAccounts()\n");
+    displayAccounts(accounts, count);
+    printf("Verify the output manually.\n");
+}
+
 int main()
 {
     test_createAccount();
+    test_displayAccounts();
     printf("All tests completed.\n");
     return 0;
 }
