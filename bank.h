@@ -14,5 +14,7 @@ typedef struct
 // Function declarations
 void createAccount(Account accounts[], int *count);
 void displayAccounts(const Account accounts[], int count);
+void deposit(Account accounts[], int count, int accountNumber, double amount);
+void withdraw(Account accounts[], int count, int accountNumber, double amount);
 
 #endif
