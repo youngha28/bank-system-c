@@ -22,3 +22,15 @@ void createAccount(Account accounts[], int *count)
 
     printf("Account created successfully! Account Number: %d\n", newAccount.accountNumber);
 }
+
+// Function to display all accounts
+void displayAccounts(const Account accounts[], int count)
+{
+    printf("\n===== Account List =====\n");
+    for (int i = 0; i < count; i++)
+    {
+        printf("Account Number: %d | Name: %s | Balance: %.2f\n",
+               accounts[i].accountNumber, accounts[i].name, accounts[i].balance);
+    }
+    printf("========================\n");
+}
