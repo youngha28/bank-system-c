@@ -3,6 +3,7 @@
 
 #define MAX_ACCOUNTS 100
 
+// Structure to store account information
 typedef struct
 {
     int accountNumber;
@@ -10,6 +11,7 @@ typedef struct
     double balance;
 } Account;
 
+// Function declarations
 void createAccount(Account accounts[], int *count);
 void displayAccounts(const Account accounts[], int count);
 
